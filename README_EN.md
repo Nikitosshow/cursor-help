@@ -12,11 +12,19 @@
 
 </div>
 
+> 💖 **Support Our Projects!**
+> 
+> Visit and register on our websites:
+> - [assets-hub.ru](https://assets-hub.ru) - Free assets and resources
+> - [exmodium.ru](https://exmodium.ru) - Cheat for game "DEADLOCK"
+> 
+> Your support helps us develop our projects!
+
 > ⚠️ **IMPORTANT NOTICE**
 > 
 > This tool currently supports:
-> - ✅ Cursor v0.44.11 and below
-> - ✅ Latest 0.45.x versions
+> - ✅ Cursor v0.45.x and below
+> - ✅ Latest 0.47.x versions
 >
 > Please check your Cursor version before using this tool.
 

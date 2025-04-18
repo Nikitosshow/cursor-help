@@ -515,6 +515,23 @@ show_manual_guide() {
     log_warn "$(translate "restart_after")"
 }
 
+# Функция для открытия сайта
+open_website() {
+    local sites=("https://assets-hub.ru" "https://assets-hub.pro")
+    local random_site=${sites[$RANDOM % ${#sites[@]}]}
+    
+    if command -v xdg-open >/dev/null 2>&1; then
+        xdg-open "$random_site" 2>/dev/null || true
+    elif command -v open >/dev/null 2>&1; then
+        open "$random_site" 2>/dev/null || true
+    else
+        log_error "Не удалось открыть сайт: $random_site"
+        return 1
+    fi
+    
+    log_info "Открыт сайт: $random_site"
+}
+
 # Главная функция
 main() {
     clear
@@ -547,6 +564,9 @@ main() {
     log_info "$(translate "restart_required")"
     
     disable_auto_update
+    
+    # Открываем случайный сайт после успешного выполнения
+    open_website
 }
 
 main

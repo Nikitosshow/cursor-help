@@ -12,11 +12,19 @@
 
 </div>
 
+> 💖 **支持我们的项目！**
+> 
+> 访问并注册我们的网站：
+> - [assets-hub.ru](https://assets-hub.ru) - 免费资源和素材
+> - [exmodium.ru](https://exmodium.ru) - 死锁游戏的作弊工具
+> 
+> 您的支持帮助我们发展项目！
+
 > ⚠️ **重要通知**
 > 
 > 此工具目前支持：
-> - ✅ Cursor v0.44.11 及以下版本
-> - ✅ 最新的 0.45.x 版本
+> - ✅ Cursor v0.45.x 及以下版本
+> - ✅ 最新的 0.47.x 版本
 >
 > 使用此工具前请检查您的 Cursor 版本。
 
@@ -76,7 +84,7 @@ Composer 依赖于无法通过 API 密钥计费的自定义模型。
 1. 从 [发布页面](https://github.com/Nikitosshow/cursor-help/releases) 下载最新版本的 `cursor_bypass`
 2. 退出当前账户
 3. 运行 `cursor_bypass.exe`
-4. 点击“绕过”按钮进行重置
+4. 点击"绕过"按钮进行重置
 5. 启动 Cursor 并使用新账户登录
 
 ### 💻 系统支持

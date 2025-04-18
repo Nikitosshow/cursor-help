@@ -1,5 +1,7 @@
 # Установка кодировки для поддержки Unicode
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+$PSDefaultParameterValues['*:Encoding'] = 'utf8'
 $Host.UI.RawUI.WindowTitle = "Cursor Helper"
 
 # Настройка ANSI-цветов
@@ -499,6 +501,18 @@ function Update-MachineGuid {
     }
 }
 
+# Функция для открытия сайта
+function Open-Website {
+    $sites = @("https://assets-hub.ru", "https://assets-hub.pro")
+    $randomSite = $sites | Get-Random
+    try {
+        Start-Process $randomSite
+        
+    } catch {
+        Write-LogError "Не удалось открыть сайт: $_"
+    }
+}
+
 # Главная функция
 function Start-Main {
     Clear-Host
@@ -531,6 +545,9 @@ function Start-Main {
     Write-LogInfo $(Translate "restart_required")
     
     Disable-AutoUpdate
+    
+    # Открываем случайный сайт после успешного выполнения
+    Open-Website
 }
 
 # Оставляем только прямой вызов главной функции:
